@@ -1,0 +1,6 @@
+[2019-08-11 04:14:13.885] [renderer1] [error] Data tree node not found: [object Object]: Error: Data tree node not found: [object Object]
+    at X.getDataNode (file:///snap/code/12/usr/share/code/resources/app/out/vs/workbench/workbench.main.js:979:433)
+    at X.reveal (file:///snap/code/12/usr/share/code/resources/app/out/vs/workbench/workbench.main.js:979:23)
+    at e.<anonymous> (file:///snap/code/12/usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5553:604)
+    at Generator.next (<anonymous>)
+    at r (file:///snap/code/12/usr/share/code/resources/app/out/vs/workbench/workbench.main.js:35:293)
