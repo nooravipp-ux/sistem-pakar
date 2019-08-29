@@ -1,11 +1,10 @@
 <?php 
     include('../database/koneksi.php');
     $kd_tindakan = $_GET['kd_tindakan'];
-    $kd_pasal = $_GET['kd_pasal'];
     $tindakan = $_GET['tindakan'];
         
 
-    $query = "INSERT INTO tindakan (kd_tindakan, kd_pasal, tindakan) VALUES ('$kd_tindakan', '$kd_pasal', '$tindakan')";
+    $query = "INSERT INTO tbl_tindakan (kd_tindakan, tindakan) VALUES ('$kd_tindakan', '$tindakan')";
 
     if (mysqli_query($koneksi, $query)){
         header("location:index.php");

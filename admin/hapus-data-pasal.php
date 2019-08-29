@@ -3,7 +3,7 @@
     $kd_pasal = $_GET['kd_pasal'];
         
 
-    $query = "DELETE FROM sangsi WHERE kd_pasal='$kd_pasal'";
+    $query = "DELETE FROM tbl_pasal WHERE kd_pasal='$kd_pasal'";
 
     if (mysqli_query($koneksi, $query)){
         header("location:index.php");

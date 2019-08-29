@@ -29,7 +29,7 @@
           
                 <!-- Nav Item - HOME -->
                 <li class="nav-item active">
-                  <a class="nav-link" href="../home.php">
+                  <a class="nav-link" href="../index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Beranda</span></a>
                 </li>
@@ -76,9 +76,9 @@
           
                 <!-- Nav Item - Laporan Kasus -->
                 <li class="nav-item">
-                  <a class="nav-link" href="charts.html">
+                  <a class="nav-link" href="bap.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>LAPORAN KASUS</span></a>
+                    <span>BAP</span></a>
                 </li>
           
                 <!-- Nav Item - Logout -->

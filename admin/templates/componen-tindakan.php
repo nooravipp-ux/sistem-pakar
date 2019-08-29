@@ -16,21 +16,19 @@
                 <tr>
                     <th>kode</th>
                     <th>Tindakan</th>
-                    <th>Pasal</th>
                     <th>action</th>
                 </tr>
             </thead>
             <tbody>
             <?php
                 include('../database/koneksi.php');
-                $query = "SELECT * FROM tindakan";
+                $query = "SELECT * FROM tbl_tindakan";
                 if ($hasil = mysqli_query($koneksi, $query)){
                     while($row = mysqli_fetch_array($hasil, MYSQLI_ASSOC)){
             ?>
             <tr>
                 <td><?php echo $row["kd_tindakan"]; ?></td>
                 <td><?php echo $row["tindakan"]; ?></td>
-                <td><?php echo $row["kd_pasal"]; ?></td>
                 <td><a href="hapus-data-tindakan.php?kd_tindakan=<?php echo $row["kd_tindakan"]; ?>">hapus</a></td>
             </tr>
                 <?php

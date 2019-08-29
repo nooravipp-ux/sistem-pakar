@@ -11,29 +11,27 @@
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
                 <tr>
+                    <th>id<th>
+                    <th>terjerat pasal</th>
                     <th>nama</th>
                     <th>umur</th>
-                    <th>kelamin</th>
-                    <th>warganegara</th>
-                    <th>alamat</th>
-                    <th>Pasal</th>
+                    <th>jenis kelamin</th>
                     <th>Detail</th>
                 </tr>
             </thead>
             <tbody>
             <?php
                 include('../database/koneksi.php');
-                $query = "SELECT * FROM pelaku";
+                $query = "SELECT * FROM tbl_pelaku";
                 if ($hasil = mysqli_query($koneksi, $query)){
                     while($row = mysqli_fetch_array($hasil, MYSQLI_ASSOC)){
             ?>
             <tr>
+                <td><?php echo $row["id_pelaku"]; ?></td>
+                <td><?php echo $row["kd_pasal"]; ?></td>
                 <td><?php echo $row["nama"]; ?></td>
                 <td><?php echo $row["umur"]; ?></td>
-                <td><?php echo $row["kelamin"]; ?></td>
-                <td><?php echo $row["warganegara"]; ?></td>
-                <td><?php echo $row["alamat"]; ?></td>
-                <td><?php echo $row["kd_pasal"]; ?></td>
+                <td><?php echo $row["jenis_kelamin"]; ?></td>
                 <td><a href="" data-toggle="modal" data-target="#detail">Detail</a></td>
                 <?php include('modal-detail.php');?>
             </tr>

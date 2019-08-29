@@ -11,7 +11,7 @@
         session_start();
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "login";
-        header("location:../home.php");
+        header("location:../admin/index.php");
     } else {
         header("location:../index.php");
     }

@@ -15,7 +15,7 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th>pasal</th>
+                        <th>kode pasal</th>
                         <th>hukuman</th>
                         <th>action</th>
                     </tr>
@@ -23,7 +23,7 @@
                 <tbody>
                 <?php
                     include('../database/koneksi.php');
-                    $query = "SELECT * FROM sangsi";
+                    $query = "SELECT * FROM tbl_pasal";
                     if ($hasil = mysqli_query($koneksi, $query)){
                         while($row = mysqli_fetch_array($hasil, MYSQLI_ASSOC)){
                 ?>

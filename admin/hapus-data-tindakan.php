@@ -3,7 +3,7 @@
     $kd_tindakan = $_GET['kd_tindakan'];
         
 
-    $query = "DELETE FROM tindakan WHERE kd_tindakan='$kd_tindakan'";
+    $query = "DELETE FROM tbl_tindakan WHERE kd_tindakan='$kd_tindakan'";
 
     if (mysqli_query($koneksi, $query)){
         header("location:index.php");

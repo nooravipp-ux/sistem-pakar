@@ -4,7 +4,7 @@
     $hukuman = $_GET['hukuman'];
         
 
-    $query = "INSERT INTO sangsi (kd_pasal, hukuman) VALUES ('$kd_pasal', '$hukuman')";
+    $query = "INSERT INTO tbl_pasal (kd_pasal, hukuman) VALUES ('$kd_pasal', '$hukuman')";
 
     if (mysqli_query($koneksi, $query)){
         header("location:index.php");

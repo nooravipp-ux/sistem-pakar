@@ -15,10 +15,6 @@
             <input type="text" name="kd_tindakan" class="form-control" id="formGroupExampleInput" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">pasal</label>
-            <input type="text" name="kd_pasal" class="form-control" id="formGroupExampleInput2" placeholder="">
-        </div>
-        <div class="form-group">
             <label for="formGroupExampleInput2">tindakan</label>
             <input type="text" name="tindakan" class="form-control" id="formGroupExampleInput2" placeholder="">
         </div>
