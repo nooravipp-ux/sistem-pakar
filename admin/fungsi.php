@@ -7,125 +7,52 @@ function answer($kode){
     }
     if($kode=='T008'){
         echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T009'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=365A'>Tidak</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T011'>Tidak</a>";
     }
 
     if($kode=='T009'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=T010'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m8-a'>Tidak</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T010'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365A'>Tidak</a>";
     }
     if($kode=='T010'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=T005'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode='>Tidak</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T005'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365B'>Tidak</a>";
     }
     if($kode=='T005'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=365D'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m7-a'>Tidak</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365D'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365C'>Tidak</a>";
     }
-    if($kode=='m6-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s1'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s2'>Tidak</a>";
+    if($kode=='T004'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T005'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T007'>Tidak</a>";
     }
-    if($kode=='m7-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s3'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s4'>Tidak</a>";
+    if($kode=='T005'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=363B'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=363C'>Tidak</a>";
     }    
-    if($kode=='m8-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m9-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m10-a'>Tidak</a>";
+    if($kode=='T007'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=364'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T002'>Tidak</a>";
     }
-    if($kode=='m9-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s5'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s6'>Tidak</a>";
+    if($kode=='T002'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=363A'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T006'>Tidak</a>";
     }
-    if($kode=='m10-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m11-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m12-a'>Tidak</a>";
+    if($kode=='T006'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=363A'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T003'>Tidak</a>";
     }
-    if($kode=='m11-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s7'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s8'>Tidak</a>";
+    if($kode=='T003'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=363A'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=362'>Tidak</a>";
     }
-    if($kode=='m12-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s9'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m13-a'>Tidak</a>";
+    if($kode=='T011'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T012'>Ya</a>"; 
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365A'>Tidak</a>";
     }
-    if($kode=='m13-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s10'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s11'>Tidak</a>";
-    }
-
-
-
-    if($kode=='m3-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m4-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m8-b'>Tidak</a>";
-    }
-    if($kode=='m4-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m5-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s24'>Tidak</a>";
-    }
-    if($kode=='m5-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m6-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m7-b'>Tidak</a>";
-    }
-    if($kode=='m6-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s13'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s14'>Tidak</a>";
-    }
-    if($kode=='m7-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s15'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s16'>Tidak</a>";
-    }    
-    if($kode=='m8-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m9-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m10-b'>Tidak</a>";
-    }
-    if($kode=='m9-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s17'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s18'>Tidak</a>";
-    }
-    if($kode=='m10-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m11-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m12-b'>Tidak</a>";
-    }
-    if($kode=='m11-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s19'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s20'>Tidak</a>";
-    }
-    if($kode=='m12-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s21'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m13-b'>Tidak</a>";
-    }
-    if($kode=='m13-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s22'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s23'>Tidak</a>";
-    }
-
-
-    if($kode=='m14'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m15'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m16'>Tidak</a>";
-    }
-    if($kode=='m15'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s25'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s26'>Tidak</a>";
-    }    
-    if($kode=='m16'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m17'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m18'>Tidak</a>";
-    }
-    if($kode=='m17'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s27'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s28'>Tidak</a>";
-    }
-    if($kode=='m18'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='question.php?kode=m19'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s31'>Tidak</a>";
-    }
-    if($kode=='m19'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s29'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s30'>Tidak</a>";
+    if($kode=='T012'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=367B'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=367A'>Tidak</a>";/*stop*/
     }
 
 }

@@ -16,8 +16,9 @@
   <!-- Fixed navbar -->
   <nav class="navbar p-0 navbar-expand-md navbar-dark shadow fixed-top bg-info">
     <a class="navbar-brand" href="index.php">
-    <img src="image/icon.png" height="25" class="d-inline-block align-top" alt="">
-        Sistem Pakar
+    <div class="sidebar-brand-icon rotate-n-15">
+                <i class="fas fa-laugh-wink"></i>
+            </div>
   	</a>
   	<ul class="navbar-nav mr-auto">
     </ul>
@@ -34,8 +35,6 @@
                 <?php
                 include('../database/koneksi.php');
                 $kode='T001';
-                session_start();
-                echo "<p>Hai, ".$_SESSION['username']."</p>";
                     
                     if(isset($_GET['kode'])){
                         $kode=$_GET['kode'];
@@ -45,7 +44,8 @@
                     $data = mysqli_query($koneksi,$sql);
                     $row = mysqli_fetch_assoc($data);     
                 ?>
-                
+                <label for="exampleFormControlInput1">Introgasi</label>
+                <hr>
                 <label for="exampleFormControlInput1"><?php echo $row['tindakan']; ?></label>
                 
                 <br>
@@ -54,14 +54,8 @@
                         include "fungsi.php";
                         answer($kode);                    
                     ?>
-                    
-                   
-                    
                 </div>
-                
-
             </form>
-
           </div>
     </main>
     <script src="../assets/js/jquery.min.js"></script>

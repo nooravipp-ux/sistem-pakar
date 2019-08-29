@@ -28,8 +28,6 @@
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                       <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-beranda" role="tab" aria-controls="nav-home" aria-selected="true">Beranda</a>
                       <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-kuhp" role="tab" aria-controls="nav-profile" aria-selected="false">KUHP</a>
-                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-bap" role="tab" aria-controls="nav-contact" aria-selected="false">BAP</a>
-                      <a class="nav-item nav-link" href="admin/index.php" >ADMIN</a>
                     </div>
                 </nav>
                   <ul class="navbar-nav ml-auto">
@@ -56,11 +54,7 @@
             <?php
                 include('templates/kuhp.php');
             ?>
-            <!-- End of KUHP -->
-            <!-- BAP Form -->
-            <?php
-                include('templates/bap-form.php');
-            ?>
+            
             <!-- End of BAP Form -->
         </div>
         <!--end of Nav content-->
