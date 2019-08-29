@@ -4,9 +4,9 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary float-left">Data Pasal</h6>
+            <h6 class="m-0 font-weight-bold text-primary float-left">Data Relasi</h6>
 
-            <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#form-pasal">
+            <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#form-relasi">
                 Tambah data
             </button>
         </div>
@@ -16,22 +16,20 @@
                 <thead>
                     <tr>
                         <th>kode pasal</th>
-                        <th>hukuman</th>
-                        <th>Keterangan</th>
+                        <th>kode relasi</th>
                         <th>action</th>
                     </tr>
                 </thead>
                 <tbody>
                 <?php
                     include('../database/koneksi.php');
-                    $query = "SELECT * FROM tbl_pasal";
+                    $query = "SELECT * FROM tbl_relasi";
                     if ($hasil = mysqli_query($koneksi, $query)){
                         while($row = mysqli_fetch_array($hasil, MYSQLI_ASSOC)){
                 ?>
                 <tr>
-                    <td><?php echo $row["kd_pasal"]; ?></td>
-                    <td><?php echo $row["hukuman"]." Tahun";?></td>
-                    <td><?php echo $row["keterangan"]; ?></td>
+                    <td><?php echo $row["kd_pasal"];?></td>
+                    <td><?php echo $row["kd_tindakan"];?></td>
                     <td>
                         <a href="hapus-data-pasal.php?kd_pasal=<?php echo $row["kd_pasal"]; ?>">hapus</a> | 
                         <button type="button" class="btn btn-succes editbtn">Edit</button>
@@ -45,7 +43,7 @@
         </div>
     
         <?php include('form-update-pasal.php'); ?>
-        <?php include('form-input-pasal.php') ?>
+        <?php include('form-input-relasi.php') ?>
     </div>
 </div>
 

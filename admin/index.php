@@ -57,6 +57,14 @@
                     <span>PASAL</span>
                   </a>
                 </li>
+
+                <!-- Nav relasi -->
+                <li class="nav-item">
+                  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#componen-relasi" aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>RELASI</span>
+                  </a>
+                </li>
           
                 <!-- Divider -->
                 <hr class="sidebar-divider">
@@ -126,6 +134,11 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <?php
                       include('templates/componen-pasal.php');
+                    ?>
+                </div>
+                <div id="componen-relasi" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <?php
+                      include('templates/componen-data-relasi.php');
                     ?>
                 </div>
                 <div id="data-kriminal" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">

@@ -1,5 +1,4 @@
-
-<div class="modal fade" id="form-pasal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="form-relasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,18 +8,14 @@
         </button>
       </div>
       <div class="modal-body">
-      <form method="GET" action="proses-input-pasal.php">
+      <form method="GET" action="proses-input-relasi.php">
         <div class="form-group">
-            <label for="formGroupExampleInput">Pasal</label>
+            <label for="formGroupExampleInput">kd_pasal</label>
             <input type="text" name="kd_pasal" class="form-control" id="formGroupExampleInput" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">hukuman</label>
-            <input type="text" name="hukuman" class="form-control" id="formGroupExampleInput2" placeholder="">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">keterangan</label>
-            <input type="text" name="keterangan" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="formGroupExampleInput2">kd_tindakan</label>
+            <input type="text" name="kd_tindakan" class="form-control" id="formGroupExampleInput2" placeholder="">
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
         
@@ -32,4 +27,3 @@
     </div>
   </div>
 </div>
-
