@@ -1,3 +1,16 @@
+<?php
+    include('../database/koneksi.php');
+    session_start();
+    $kode='T001';
+                            
+    if(isset($_GET['kode'])){
+        $kode=$_GET['kode'];
+    }
+
+    $sql = "SELECT * from tbl_pasal WHERE kd_pasal='$kode'";
+    $data = mysqli_query($koneksi,$sql);
+    $row = mysqli_fetch_assoc($data);     
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,39 +27,64 @@
 <body id="page-top">
 <header>
   <!-- Fixed navbar -->
-  <nav class="navbar p-0 navbar-expand-md navbar-dark shadow fixed-top bg-info">
+  <nav class="navbar p-0 navbar-expand-md bg-gradient-primary shadow fixed-top bg-info">
     <a class="navbar-brand" href="index.php">
-        <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
   	</a>
   	<ul class="navbar-nav mr-auto">
     </ul>
   </nav>
 </header>
-<main class="batas-atas">
-<div class="card text-white bg-info mb-3">
-          <h5 class="card-header bg-info">HASIL BAP</h5>
-          <div class="card-body text-center ukuran-30">
-
-            <form method="post" action="input-ketampung.php" enctype="multipart/form-data" role="form">
-
-                <?php
-                include('../database/koneksi.php');
-                $kode='T001';
+    <main class="batas-atas">
+        <div class="card text-white bg-gradient-primary mb-3">
+            <h5 class="card-header bg-info text-center">HASIL BERITA ACARA PEMERIKSAAN (PAKAR)</h5>
+                <div class="card-body text-left">
+                <form>
+                    <div class="form-group row">
+                        <label for="nama_pelaku" class="col-sm-2 col-form-label">ID BAP</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['nama_pelaku'];?>" id="nama_pelaku" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="nama_pelaku" class="col-sm-2 col-form-label">Nama Pelaku</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['nama_pelaku'];?>" id="nama_pelaku" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="umur" class="col-sm-2 col-form-label">Umur</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['id_bap'];?>" id="" placeholder="">
+                        </div>
+                    </div>
+                   <div class="form-group row">
+                        <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['jenis_kelamin'];?>" id="jenis_kelamin" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="vonis_pasal" class="col-sm-2 col-form-label">Vonis Pasal</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" readonly id="vonis_pasal" value="<?php echo $row['kd_pasal']; ?>" placeholder="">
+                        </div>
+                    </div>
+                   <div class="form-group row">
+                        <label for="hukuman" class="col-sm-2 col-form-label">Hukuman</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" readonly id="hukuman" value="<?php echo $row['keterangan']; ?>" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary center-block">Simpan</button>
+                        </div>
+                    </div>
+                </form>
                     
-                    if(isset($_GET['kode'])){
-                        $kode=$_GET['kode'];
-                    }
-
-                    $sql = "SELECT * from tbl_pasal WHERE kd_pasal='$kode'";
-                    $data = mysqli_query($koneksi,$sql);
-                    $row = mysqli_fetch_assoc($data);     
-                ?>
-                <hr>
-                <label for="exampleFormControlInput1"><?php echo $row['keterangan']; ?></label>
-                
-                <br>
-            </form>
-          </div>
+            </div>
+        </div>
     </main>
     <script src="../assets/js/jquery.min.js"></script>
     <!--custom script for all-->

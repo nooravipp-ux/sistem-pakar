@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  $_SESSION['id'] = "U001";
+  $_SESSION['nama'] = "jhon";
+  $_SESSION['umur'] = "23";
+  $_SESSION['kelamin'] = "laki-laki";
+  
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +22,7 @@
 <body id="page-top">
 <header>
   <!-- Fixed navbar -->
-  <nav class="navbar p-0 navbar-expand-md navbar-dark shadow fixed-top bg-info">
+  <nav class="navbar p-0 navbar-expand-md bg-gradient-primary shadow fixed-top bg-info">
     <a class="navbar-brand" href="index.php">
     <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
@@ -26,7 +34,7 @@
   </nav>
 </header>
 <main class="batas-atas">
-<div class="card text-white bg-info mb-3">
+<div class="card text-white bg-gradient-primary mb-3">
           <h5 class="card-header bg-info">BAP</h5>
           <div class="card-body text-center ukuran-30">
 

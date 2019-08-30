@@ -22,7 +22,7 @@
         <div id="content">
             
             <!--Top Bar-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white topbar fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-white topbar fixed-top">
                 <!--Navigasi-->
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -30,6 +30,20 @@
                       <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-kuhp" role="tab" aria-controls="nav-profile" aria-selected="false">KUHP</a>
                     </div>
                 </nav>
+                    <?php 
+                        session_start();
+                        $_SESSION['status'] = "";
+                        if($_SESSION['status'] == "login"){?>
+                            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown no-arrow">
+                                <a class="nav-link dropdown-toggle" href="admin/index.php">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                                    <img class="img-profile rounded-circle" src="">
+                                </a>
+                            </li>
+                        </ul>
+                        <?php }else{
+                    ?>
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item dropdown no-arrow">
                           <a class="nav-link dropdown-toggle" href="templates/login-form.php">
@@ -37,7 +51,7 @@
                               <img class="img-profile rounded-circle" src="">
                           </a>
                       </li>
-                  </ul>
+                  </ul> <?php } ?>
                   <!--End of Admin Profil--> 
                   
             </nav>
@@ -58,7 +72,7 @@
             <!-- End of BAP Form -->
         </div>
         <!--end of Nav content-->
-        <?php
+        <?php   
             include('templates/footer.php');
         ?>
         </div>   

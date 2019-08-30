@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if($_SESSION['status'] != "login"){
+    header("location:../templates/login-form.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,10 +91,53 @@
           
                 <!-- Nav Item - Laporan Kasus -->
                 <li class="nav-item">
-                  <a class="nav-link" href="bap.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>BAP</span></a>
+                  <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="bap.php"><i class="fas fa-fw fa-chart-area"></i><span>BAP</span></a>
                 </li>
+                <!-- Modal for BAP-->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Masukan Identitas Pelaku</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                      <form action="bap.php" method="POST">
+                        <div class="form-group row">
+                          <label for="id_bap" class="col-sm-2 col-form-label">ID BAP</label>
+                          <div class="col-sm-10">
+                            <input type="text" name="id_bap" class="form-control" id="id_bap">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="nama_pelaku" class="col-sm-2 col-form-label">Nama Pelaku</label>
+                          <div class="col-sm-10">
+                            <input type="text" name="nama_pelaku" class="form-control" id="nama_pelaku">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="umur" class="col-sm-2 col-form-label">Umur</label>
+                          <div class="col-sm-10">
+                            <input type="number" name="umur" class="form-control" id="umur">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                          <div class="col-sm-10">
+                            <input type="text" name="jenis_kelamin" class="form-control" id="jenis_kelamin">
+                          </div>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-primary">lanjut BAP</button>
+                      </form>
+                      </div>
+                      <div class="modal-footer">
+                      </div>
+                    </div>
+                  </div>
+                </div>
           
                 <!-- Nav Item - Logout -->
                 <li class="nav-item">
@@ -116,7 +166,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">ADMIN</span>
+                                <span class="mr-2 d-none d-lg-inline text-dark-600 small">ADMIN</span>
                                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                             </a>
                             <!-- Dropdown - User Information -->
