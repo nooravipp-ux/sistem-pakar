@@ -11,11 +11,11 @@
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
                 <tr>
-                    <th>id<th>
-                    <th>terjerat pasal</th>
-                    <th>nama</th>
-                    <th>umur</th>
-                    <th>jenis kelamin</th>
+                    <th>ID BAP<th>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Vonis Pasal</th>
                     <th>Detail</th>
                 </tr>
             </thead>
@@ -27,11 +27,11 @@
                     while($row = mysqli_fetch_array($hasil, MYSQLI_ASSOC)){
             ?>
             <tr>
-                <td><?php echo $row["id_pelaku"]; ?></td>
-                <td><?php echo $row["kd_pasal"]; ?></td>
-                <td><?php echo $row["nama"]; ?></td>
+                <td><?php echo $row["id_bap"]; ?></td>
+                <td><?php echo $row["nama_pelaku"]; ?></td>
                 <td><?php echo $row["umur"]; ?></td>
                 <td><?php echo $row["jenis_kelamin"]; ?></td>
+                <td><?php echo $row["kd_pasal"]; ?></td>
                 <td><a href="" data-toggle="modal" data-target="#detail">Detail</a></td>
                 <?php include('modal-detail.php');?>
             </tr>

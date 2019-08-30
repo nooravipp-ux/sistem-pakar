@@ -23,19 +23,19 @@
 <header>
   <!-- Fixed navbar -->
   <nav class="navbar p-0 navbar-expand-md bg-gradient-primary shadow fixed-top bg-info">
-    <a class="navbar-brand" href="index.php">
-    <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-laugh-wink"></i>
-            </div>
-  	</a>
+    <a type="button" class="btn btn-sm btn-info" href="index.php">Dashborad Admin</a>
   	<ul class="navbar-nav mr-auto">
     </ul>
-    <a type="button" class="btn btn-sm btn-info" href="loginpakar.php">Login Pakar</a>
+    <a class="navbar-brand" href="index.php">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+  	</a>
   </nav>
 </header>
 <main class="batas-atas">
 <div class="card text-white bg-gradient-primary mb-3">
-          <h5 class="card-header bg-info">BAP</h5>
+          <h5 class="card-header bg-info">Berita Acara Pemeriksaan</h5>
           <div class="card-body text-center ukuran-30">
 
             <form method="post" action="input-ketampung.php" enctype="multipart/form-data" role="form">
