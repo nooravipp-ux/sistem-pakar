@@ -22,7 +22,7 @@
         <div id="content">
             
             <!--Top Bar-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-white topbar fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info topbar fixed-top">
                 <!--Navigasi-->
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">

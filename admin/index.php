@@ -25,8 +25,8 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion static-top" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-            <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-laugh-wink"></i>
+            <div class="sidebar-brand-icon">
+                <i class="fas fa-balance-scale"></i>
             </div>
             <div class="sidebar-brand-text mx-3">Sistem Pakar</div>
                 </a>
@@ -37,7 +37,7 @@
                 <!-- Nav Item - HOME -->
                 <li class="nav-item active">
                   <a class="nav-link" href="../index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                  <i class="fas fa-home"></i>
                     <span>Beranda</span></a>
                 </li>
           
@@ -60,7 +60,7 @@
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
                   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
+                  <i class="fas fa-book-open"></i>
                     <span>PASAL</span>
                   </a>
                 </li>
@@ -68,7 +68,7 @@
                 <!-- Nav relasi -->
                 <li class="nav-item">
                   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#componen-relasi" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
+                  <i class="fas fa-code-branch"></i>
                     <span>RELASI</span>
                   </a>
                 </li>
@@ -91,7 +91,7 @@
           
                 <!-- Nav Item - BAP -->
                 <li class="nav-item">
-                  <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href=""><i class="fas fa-fw fa-chart-area"></i><span>BAP</span></a>
+                  <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href=""><i class="far fa-question-circle"></i><span>BAP</span></a>
                 </li>
                 <!-- Modal for BAP-->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
