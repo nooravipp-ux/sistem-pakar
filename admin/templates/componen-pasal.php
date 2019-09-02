@@ -13,7 +13,7 @@
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
+                <thead class="table-info">
                     <tr>
                         <th>kode pasal</th>
                         <th>hukuman</th>

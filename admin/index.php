@@ -89,9 +89,9 @@
                   </a>
                 </li>
           
-                <!-- Nav Item - Laporan Kasus -->
+                <!-- Nav Item - BAP -->
                 <li class="nav-item">
-                  <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="bap.php"><i class="fas fa-fw fa-chart-area"></i><span>BAP</span></a>
+                  <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href=""><i class="fas fa-fw fa-chart-area"></i><span>BAP</span></a>
                 </li>
                 <!-- Modal for BAP-->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -104,7 +104,7 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                      <form action="bap.php" method="POST">
+                      <form action="insert-data-pelaku.php" method="GET">
                         <div class="form-group row">
                           <label for="id_bap" class="col-sm-2 col-form-label">ID BAP</label>
                           <div class="col-sm-10">

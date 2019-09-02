@@ -9,7 +9,8 @@
 
     $sql = "SELECT * from tbl_pasal WHERE kd_pasal='$kode'";
     $data = mysqli_query($koneksi,$sql);
-    $row = mysqli_fetch_assoc($data);     
+    $row = mysqli_fetch_assoc($data);
+         
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,46 +29,49 @@
 <header>
   <!-- Fixed navbar -->
   <nav class="navbar p-0 navbar-expand-md bg-gradient-primary shadow fixed-top bg-info">
-    <a class="navbar-brand" href="index.php">
-    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
-  	</a>
+    <a type="button" class="btn btn-sm btn-info" href="index.php">Dashborad Admin</a>
   	<ul class="navbar-nav mr-auto">
     </ul>
+    <a class="navbar-brand" href="index.php">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+  	</a>
   </nav>
 </header>
     <main class="batas-atas">
         <div class="card text-white bg-gradient-primary mb-3">
             <h5 class="card-header bg-info text-center">HASIL BERITA ACARA PEMERIKSAAN (PAKAR)</h5>
                 <div class="card-body text-left">
-                <form>
+                <form action="simpan-data-bap.php" method="POST" >
                     <div class="form-group row">
                         <label for="nama_pelaku" class="col-sm-2 col-form-label">ID BAP</label>
                         <div class="col-sm-10">
-                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['nama_pelaku'];?>" id="nama_pelaku" placeholder="">
+                        <input type="text" class="form-control" name="id_bap" readonly value="<?php echo $_SESSION['id'];?>" id="nama_pelaku" placeholder="">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="nama_pelaku" class="col-sm-2 col-form-label">Nama Pelaku</label>
                         <div class="col-sm-10">
-                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['nama_pelaku'];?>" id="nama_pelaku" placeholder="">
+                        <input type="text" class="form-control" name="nama_pelaku" readonly value="<?php echo $_SESSION['nama'];?>" id="nama_pelaku" placeholder="">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="umur" class="col-sm-2 col-form-label">Umur</label>
                         <div class="col-sm-10">
-                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['id_bap'];?>" id="" placeholder="">
+                        <input type="text" class="form-control" name="umur" readonly value="<?php echo $_SESSION['umur'];?>" id="" placeholder="">
                         </div>
                     </div>
                    <div class="form-group row">
                         <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                         <div class="col-sm-10">
-                        <input type="text" class="form-control" readonly value="<?php echo $_SESSION['jenis_kelamin'];?>" id="jenis_kelamin" placeholder="">
+                        <input type="text" class="form-control" name="jenis_kelamin" readonly value="<?php echo $_SESSION['jenis_kelamin'];?>" id="jenis_kelamin" placeholder="">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="vonis_pasal" class="col-sm-2 col-form-label">Vonis Pasal</label>
                         <div class="col-sm-10">
-                        <input type="text" class="form-control" readonly id="vonis_pasal" value="<?php echo $row['kd_pasal']; ?>" placeholder="">
+                        <input type="text" class="form-control" name="kd_pasal" readonly id="vonis_pasal" value="<?php echo $row['kd_pasal']; ?>" placeholder="">
                         </div>
                     </div>
                    <div class="form-group row">

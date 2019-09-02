@@ -9,20 +9,20 @@
     <div class="card-body">
         <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead>
+            <thead class="table-info">
                 <tr>
-                    <th>ID BAP<th>
-                    <th>Nama</th>
-                    <th>Umur</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Vonis Pasal</th>
-                    <th>Detail</th>
+                    <th>ID BAP</th>
+                    <th>NAMA PELAKU</th>
+                    <th>UMUR</th>
+                    <th>JENIS KELAMIN</th>
+                    <th>VONIS PASAL</th>
+                    <th>ACTION</th>
                 </tr>
             </thead>
             <tbody>
             <?php
                 include('../database/koneksi.php');
-                $query = "SELECT * FROM tbl_pelaku";
+                $query = "SELECT * FROM tbl_hasil_bap";
                 if ($hasil = mysqli_query($koneksi, $query)){
                     while($row = mysqli_fetch_array($hasil, MYSQLI_ASSOC)){
             ?>
@@ -33,13 +33,13 @@
                 <td><?php echo $row["jenis_kelamin"]; ?></td>
                 <td><?php echo $row["kd_pasal"]; ?></td>
                 <td><a href="" data-toggle="modal" data-target="#detail">Detail</a></td>
-                <?php include('modal-detail.php');?>
             </tr>
                 <?php
                     }
                 } ?>
             </tbody>
         </table>
+        <?php include('modal-detail.php');?>
         </div>
   </div>
 </div>

@@ -1,11 +1,4 @@
-<?php
-  session_start();
-  $_SESSION['id'] = "U001";
-  $_SESSION['nama'] = "jhon";
-  $_SESSION['umur'] = "23";
-  $_SESSION['kelamin'] = "laki-laki";
-  
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
