@@ -6,7 +6,7 @@
     if(isset($_GET['kode'])){
         $kode=$_GET['kode'];
     }
-
+    
     $sql = "SELECT * from tbl_pasal WHERE kd_pasal='$kode'";
     $data = mysqli_query($koneksi,$sql);
     $row = mysqli_fetch_assoc($data);

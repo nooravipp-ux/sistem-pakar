@@ -10,7 +10,14 @@
       </div>
       <div class="modal-body">
         <div class="container">
-            ......
+            <?php
+              include("../database/koneksi.php");
+              echo "hello";
+              $query = "SELECT * FROM tbl_hasil_bap";
+              $data = mysqli_query($koneksi,$query);
+              $row = mysqli_fetch_array($data,MYSQLI_ASSOC);
+              echo $row['id_bap'];
+            ?>
         </div>
       </div>
       <div class="modal-footer">
