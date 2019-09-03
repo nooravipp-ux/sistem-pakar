@@ -24,7 +24,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container-fluid">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <i class="fas fa-balance-scale"></i>
         Pakar Hukum
@@ -36,7 +36,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">Tentang Sistem</a>
           </li>
@@ -46,13 +46,13 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="templates/login-form.php">
-                <span class="mr-2 d-none d-lg-inline text-white-600">Login</span><i class="fas fa-sign-in-alt"></i>
-            </a>
-          </li> 
         </ul>
       </div>
+      <div class="float-right">
+          <a class="nav-link" href="templates/login-form.php">
+                  <span class="mr-2 d-none d-lg-inline text-white-600">Login</span><i class="fas fa-sign-in-alt"></i>
+          </a>
+        </div>
     </div>
   </nav>
 
