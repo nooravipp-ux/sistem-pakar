@@ -25,11 +25,11 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion static-top" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-            <div class="sidebar-brand-icon">
-                <i class="fas fa-balance-scale"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">Sistem Pakar</div>
-                </a>
+              <div class="sidebar-brand-icon">
+                  <i class="fas fa-balance-scale"></i>
+              </div>
+              <div class="sidebar-brand-text mx-3">Pakar Hukum</div>
+            </a>
           
                 <!-- Divider -->
                 <hr class="sidebar-divider my-0">
@@ -104,7 +104,7 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                      <form action="insert-data-pelaku.php" method="GET">
+                      <form action="insert-data-pelaku.php" method="GET" onSubmit="validasi()">
                         <div class="form-group row">
                           <label for="id_bap" class="col-sm-2 col-form-label">ID BAP</label>
                           <div class="col-sm-10">
@@ -142,7 +142,7 @@
                 <!-- Nav Item - Logout -->
                 <li class="nav-item">
                   <a class="nav-link" href="../admin/logout.php">
-                    <i class="fas fa-fw fa-table"></i>
+                  <i class="fas fa-sign-out-alt"></i>
                     <span>LOGOUT</span></a>
                 </li>
           
@@ -165,9 +165,9 @@
                     <!--Admin Profil-->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#">
                                 <span class="mr-2 d-none d-lg-inline text-dark-600 small">ADMIN</span>
-                                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                                <i class="far fa-user"></i>
                             </a>
                             <!-- Dropdown - User Information -->
                         </li>
@@ -217,21 +217,17 @@
     <script src="../assets/js/bootstrap.min.js"></script>
 
     <script>
-      $(document).ready(function(){
-        $('.editbtn').on('click', function(){
-          $('#form-edit-pasal').modal('show');
-            $tr = $(this).closest('tr');
-
-            var data = $tr.children("td").map(function(){
-              return $(this).text();
-            }).get();
-
-            console.log(data);
-
-            $('#kd_pasal').val(data[0]);
-            $('#hukuman').val(data[1]);
-        });
-      });
+      function validasi() {
+        var id_bap = document.getElementById("id_bap").value;
+        var nama = document.getElementById("nama_lengkap").value;
+        var umur = document.getElementById("umur").value;
+        var jenis_kelamin = document.getElementById("jenis_kelamin").value;
+        if (id_bap != "" && nama !="" && umur !="" && jenis_kelamin != "") {
+          return true;
+        }else{
+          alert('Anda harus mengisi data dengan lengkap !');
+        }
+	}
     </script>
 </body>
 </html>

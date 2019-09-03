@@ -1,7 +1,4 @@
-<div class="tab-pane fade" id="nav-kuhp" role="tabpanel" aria-labelledby="nav-contact-tab">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="container">
+
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="text-center">Bab 22 - Pencurian</h1>
@@ -61,7 +58,3 @@
                         <p>Jika dia adalah suami (istri) yang terpisah meja dan ranjang atau terpisah harta kekayaan, atau jika dia adalah keluarga sedarah atau semenda, baik dalam garis lurus maupun garis menyimpang derajat kedua maka terhadap orang itu hanya mungkin diadakan penuntutan jika ada pengaduan yang terkena kejahatan.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
