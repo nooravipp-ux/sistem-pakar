@@ -141,7 +141,7 @@
           
                 <!-- Nav Item - Logout -->
                 <li class="nav-item">
-                  <a class="nav-link" href="../admin/logout.php">
+                  <a class="nav-link" href="../login/logout.php">
                   <i class="fas fa-sign-out-alt"></i>
                     <span>LOGOUT</span></a>
                 </li>

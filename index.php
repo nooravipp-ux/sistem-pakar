@@ -43,13 +43,10 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Pasal KUHP</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
         </ul>
       </div>
       <div class="float-right">
-          <a class="nav-link" href="templates/login-form.php">
+          <a class="nav-link" href="login/index.php">
                   <span class="mr-2 d-none d-lg-inline text-white-600">Login</span><i class="fas fa-sign-in-alt"></i>
           </a>
         </div>
@@ -84,17 +81,6 @@
   <section id="services" class="bg-info">
     <div class="container">
       <?php include("templates/kuhp.php"); ?>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-        </div>
-      </div>
     </div>
   </section>
 
