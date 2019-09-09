@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ADMIN</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/img/law.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -83,7 +84,7 @@
           
                 <!-- Nav Item - Data Kriminal-->
                 <li class="nav-item">
-                  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#data-kriminal" aria-expanded="true" aria-controls="collapsePages">
+                  <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#data-kriminal" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>DATA KRIMINAL</span>
                   </a>

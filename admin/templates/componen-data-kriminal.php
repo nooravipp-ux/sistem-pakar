@@ -32,7 +32,7 @@
                 <td><?php echo $row["umur"]; ?></td>
                 <td><?php echo $row["jenis_kelamin"]; ?></td>
                 <td><?php echo $row["kd_pasal"]; ?></td>
-                <td><a href="" data-toggle="modal" data-target="#detail">Detail</a></td>
+                <td><a href="detail.php?id_bap=<?php echo $row["id_bap"]; ?>">Detail</a></td>
             </tr>
                 <?php
                     }

@@ -1,7 +1,10 @@
 <?php
 
 function answer($kode){
+
+    $data = Array();
     if($kode=='T001'){
+        $data[] = $kode;
         echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T008'>Ya</a>";
         echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='bap.php?kode=T004'>Tidak</a>";
     }

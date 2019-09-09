@@ -9,6 +9,7 @@
   <meta name="author" content="">
 
   <title>Home</title>
+  <link rel="shortcut icon" type="image/png" href="assets/img/law.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
   <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
@@ -57,7 +58,6 @@
     <div class="container text-center">
       <h1>Selamat Datang di Sistem Pakar Hukum</h1>
       <img src="assets/img/Lambang_Bareskrim_Polri.png" class="mx-auto d-block" alt="Responsive image">
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
     </div>
   </header>
 
@@ -65,8 +65,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <h2>Tentang Sitem Pakar </h2>
+          <p class="lead">Sitem pakar ini di buat untuk membantu kepolisian yang bertugas dalam melakukan BAP kepada pelaku kejahatan pencurian. Sistem ini mempunyai beberapa fitur, diantaranya :</p>
           <ul>
             <li>Clickable nav links that smooth scroll to page sections</li>
             <li>Responsive behavior when clicking nav links perfect for a one page website</li>
@@ -78,7 +78,7 @@
     </div>
   </section>
 
-  <section id="services" class="bg-info">
+  <section id="services" class="bg-info text-white">
     <div class="container">
       <?php include("templates/kuhp.php"); ?>
     </div>
