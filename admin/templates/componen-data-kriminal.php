@@ -39,7 +39,6 @@
                 } ?>
             </tbody>
         </table>
-        <?php include('modal-detail.php');?>
         </div>
   </div>
 </div>
