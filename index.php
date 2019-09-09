@@ -39,7 +39,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Tentang Sistem</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Tentang Sistem Coy</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Pasal KUHP</a>
