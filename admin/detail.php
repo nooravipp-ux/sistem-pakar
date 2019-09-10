@@ -30,22 +30,23 @@ include '../database/koneksi.php';
 $id_bap = $_GET['id_bap'];
 $query = mysqli_query($koneksi, "SELECT * FROM tbl_hasil_bap WHERE id_bap='$id_bap'");
 while ($row = mysqli_fetch_array($query)){
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell(190,7,'      ID BAP               : ',0,1);
-    $pdf->Cell(190,7,$row['id_bap'],0,1);
-    $pdf->Cell(190,7,'      Nama Lengkap  : ',0,1);
-    $pdf->Cell(190,7,$row['nama_pelaku'],0,1);
-    $pdf->Cell(190,7,'      Umur                  : ',0,1);
-    $pdf->Cell(190,7,$row['umur'],0,1);
-    $pdf->Cell(190,7,'      Jenis Kelamin   : ',0,1);
-    $pdf->Cell(190,7,$row['jenis_kelamin'],0,1);
+    $id_bap = "       ID BAP               :   ".$row['id_bap'];
+    $nama = "       Nama Lengkap  :   ".$row['nama_pelaku'];
+    $umur = "       Umur                  :   ".$row['umur'];
+    $jenis_kl = "       Jenis Kelamin   :   ".$row['jenis_kelamin'];
 
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(190,7,'Telah terbukti melakukan tindak pidana berupa pencurian dan kemungkinan terjerat dengan vonis pasal :',0,1);
-$pdf->Cell(10,7,'',0,1);
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(190,7,$row['kd_pasal'],0,1,'C');
-$pdf->Cell(190,7,'--------',0,1,'C');
+    $pdf->SetFont('Arial','B',10);
+    $pdf->Cell(190,7,$id_bap,0,1);
+    $pdf->Cell(190,7,$nama,0,1);
+    $pdf->Cell(190,7,$umur,0,1);
+    $pdf->Cell(190,7,$jenis_kl,0,1);
+    $pdf->SetFont('Arial','',10);
+    $pdf->Cell(190,7,'Telah terbukti melakukan tindak pidana berupa pencurian dan kemungkinan terjerat dengan vonis pasal :',0,1);
+    $pdf->Cell(10,7,'',0,1);
+    $pdf->SetFont('Arial','B',16);
+    $pdf->Cell(190,7,$row['kd_pasal'],0,1,'C');
+    $pdf->Cell(190,7,'--------',0,1,'C');
 }
+
 $pdf->Output();
 ?>
