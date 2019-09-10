@@ -21,7 +21,7 @@ function answer($kode){
         echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365B'>Tidak</a>";
     }
     if($kode=='T005B'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365A'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365D'>Ya</a>";
         echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='hasil_bap.php?kode=365C'>Tidak</a>";
     }
     if($kode=='T002'){

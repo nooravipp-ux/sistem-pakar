@@ -127,7 +127,18 @@
                         <div class="form-group row">
                           <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                           <div class="col-sm-10">
-                            <input type="text" name="jenis_kelamin" class="form-control" id="jenis_kelamin">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios1" value="laki-laki" checked>
+                              <label class="form-check-label" for="laki-laki">
+                                Laki-laki
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios2" value="perempuan">
+                              <label class="form-check-label" for="perempuan">
+                                Perempuan
+                              </label>
+                            </div>
                           </div>
                         </div>
                     
