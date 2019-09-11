@@ -109,19 +109,19 @@
                         <div class="form-group row">
                           <label for="id_bap" class="col-sm-2 col-form-label">ID BAP</label>
                           <div class="col-sm-10">
-                            <input type="text" name="id_bap" class="form-control" id="id_bap">
+                            <input type="text" name="id_bap" class="form-control" id="id_bap" required/> 
                           </div>
                         </div>
                         <div class="form-group row">
                           <label for="nama_pelaku" class="col-sm-2 col-form-label">Nama Pelaku</label>
                           <div class="col-sm-10">
-                            <input type="text" name="nama_pelaku" class="form-control" id="nama_pelaku">
+                            <input type="text" name="nama_pelaku" class="form-control" id="nama_pelaku" required/>
                           </div>
                         </div>
                         <div class="form-group row">
                           <label for="umur" class="col-sm-2 col-form-label">Umur</label>
                           <div class="col-sm-10">
-                            <input type="number" name="umur" class="form-control" id="umur">
+                            <input type="number" name="umur" class="form-control" id="umur" required/>
                           </div>
                         </div>
                         <div class="form-group row">
