@@ -16,7 +16,7 @@
                 <thead class="table-info">
                     <tr>
                         <th>kode pasal</th>
-                        <th>hukuman</th>
+                        <th>hukuman (Tahun)</th>
                         <th>Keterangan</th>
                         <th>action</th>
                     </tr>
@@ -30,11 +30,11 @@
                 ?>
                 <tr>
                     <td><?php echo $row["kd_pasal"]; ?></td>
-                    <td><?php echo $row["hukuman"]." Tahun";?></td>
+                    <td><?php echo $row["hukuman"];?></td>
                     <td><?php echo $row["keterangan"]; ?></td>
                     <td>
                         <a href="hapus-data-pasal.php?kd_pasal=<?php echo $row["kd_pasal"]; ?>">hapus</a> | 
-                        <button type="button" class="btn btn-succes editbtn">Edit</button>
+                        <a href="edit-pasal.php?kd_pasal=<?php echo $row["kd_pasal"]; ?>">Edit</button>
                     </td>
                 </tr>
                     <?php

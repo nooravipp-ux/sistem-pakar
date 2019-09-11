@@ -29,7 +29,8 @@
             <tr>
                 <td><?php echo $row["kd_tindakan"]; ?></td>
                 <td><?php echo $row["tindakan"]; ?></td>
-                <td><a href="hapus-data-tindakan.php?kd_tindakan=<?php echo $row["kd_tindakan"]; ?>">hapus</a></td>
+                <td><a href="hapus-data-tindakan.php?kd_tindakan=<?php echo $row["kd_tindakan"]; ?>">hapus</a>|<a href="edit-tindakan.php?kd_tindakan=<?php echo $row["kd_tindakan"]; ?>">edit</a></td>
+                
             </tr>
                 <?php
                     }
