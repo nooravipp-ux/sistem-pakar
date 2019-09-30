@@ -12,11 +12,11 @@
         </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
                 <thead class="table-info">
                     <tr>
                         <th>kode pasal</th>
-                        <th>kode relasi</th>
+                        <th>kode tindakan</th>
                         <th>action</th>
                     </tr>
                 </thead>
@@ -31,8 +31,8 @@
                     <td><?php echo $row["kd_pasal"];?></td>
                     <td><?php echo $row["kd_tindakan"];?></td>
                     <td>
-                        <a href="hapus-data-pasal.php?kd_pasal=<?php echo $row["kd_pasal"]; ?>">hapus</a> | 
-                        <button type="button" class="btn btn-succes editbtn">Edit</button>
+                        <a href="hapus-data-pasal.php?kd_pasal=<?php echo $row["kd_pasal"]; ?>"><i class="fas fa-trash-alt"></i></a> | 
+                        <button type="button" class="btn btn-succes editbtn"><i class="far fa-edit"></i></button>
                     </td>
                 </tr>
                     <?php

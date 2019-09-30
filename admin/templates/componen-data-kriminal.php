@@ -8,7 +8,7 @@
         </div>
     <div class="card-body">
         <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
             <thead class="table-info">
                 <tr>
                     <th>ID BAP</th>
@@ -32,7 +32,7 @@
                 <td><?php echo $row["umur"]; ?></td>
                 <td><?php echo $row["jenis_kelamin"]; ?></td>
                 <td><?php echo $row["kd_pasal"]; ?></td>
-                <td><a href="detail.php?id_bap=<?php echo $row["id_bap"]; ?>">Detail</a></td>
+                <td><a href="detail.php?id_bap=<?php echo $row["id_bap"]; ?>"><i class="fas fa-eye"></i></a></td>
             </tr>
                 <?php
                     }

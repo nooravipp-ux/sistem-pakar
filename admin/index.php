@@ -1,7 +1,7 @@
 <?php
   session_start();
   if($_SESSION['status'] != "login"){
-    header("location:../templates/login-form.php");
+    header("location:../login/index.php");
   }
 ?>
 

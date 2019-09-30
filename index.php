@@ -67,12 +67,6 @@
         <div class="col-lg-8 mx-auto">
           <h2>Tentang Sitem Pakar </h2>
           <p class="lead">Sitem pakar ini di buat untuk membantu kepolisian yang bertugas dalam melakukan BAP kepada pelaku kejahatan pencurian. Sistem ini mempunyai beberapa fitur, diantaranya :</p>
-          <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul>
         </div>
       </div>
     </div>
